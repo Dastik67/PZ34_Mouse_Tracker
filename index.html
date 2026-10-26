@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Трекер мыши</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <div class="grid">
+        <section class="panel wide">
+          <h2>Координатная площадка</h2>
+          <div id="track-area" class="track-area">
+            <div id="pointer-dot" class="pointer-dot" aria-hidden="true"></div>
+            <span class="track-label">Ведите мышь внутри прямоугольника</span>
+          </div>
+        </section>
+        <section class="panel">
+          <h2>Координаты</h2>
+          <p>X: <strong id="coord-x">—</strong></p>
+          <p>Y: <strong id="coord-y">—</strong></p>
+        </section>
+        <section class="panel">
+          <h2>Событие</h2>
+          <p id="track-status" class="status" aria-live="polite">
+            Курсор вне площадки.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
